@@ -1,0 +1,64 @@
+.parent {
+    width: 1400px;
+    height: 1500px;
+    margin: 0px auto;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr; */
+}
+@media (max-width: 1400px){
+        .parent{
+            max-width: 900px;   
+        }
+}
+@media (max-width: 900px){
+    .parent {
+        max-width: 600;
+    }
+}
+/* @media (max-width: 450px){
+    .parent {
+        max-width: none;
+    }
+} */
+.border {
+    width: 415px;
+    height: 350px;
+    padding-left: 15px;
+    margin-left: 10px;
+    margin-top: 10px;
+    background: bisque;
+
+    float: left;
+}
+.imgWrapper {
+    overflow: hidden;
+    cursor: pointer;
+    width: 400px;
+    height: 250px;
+    margin-top: 15px;
+    position: relative;
+}
+.imgWrapper:hover .imgs{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.2);
+}
+.imgs {
+    width: 400px;
+    height: 250px;
+    
+   -moz-transition: all 0.5s;
+   -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    
+}
+#motoName,.motoPrice {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+}
+del {
+    margin-right: 15px;
+}
+
+
